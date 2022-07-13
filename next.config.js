@@ -35,15 +35,6 @@ const config = (phase, config) => {
     compiler: {
       styledComponents: true,
     },
-    redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/dashboard',
-          permanent: true,
-        },
-      ];
-    },
   };
 
   /**

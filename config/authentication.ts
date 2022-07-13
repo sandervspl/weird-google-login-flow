@@ -4,6 +4,6 @@ export default {
     production: 'https://next-dashboard-test.label-a.nl/auth',
     acceptance: 'https://next-dashboard-test.label-a.nl/auth',
     test: 'https://next-dashboard-test.label-a.nl/auth',
-    development: 'https://next-dashboard-test.label-a.nl/auth',
+    development: 'localhost:3000',
   },
 };

@@ -7,6 +7,6 @@ export const getApiUrl = () => {
     case 'test':
       return 'https://next-dashboard-test.label-a.nl/api';
     default:
-      return 'https://next-dashboard-test.label-a.nl/api';
+      return 'http://localhost:3000';
   }
 };

@@ -1,3 +1,5 @@
+import {} from 'styled-components/cssprop';
+
 // Modules
 export * from './general';
 export * from './queries';
