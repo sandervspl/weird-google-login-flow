@@ -1,0 +1,75 @@
+{
+  "name": "custom-provider-test",
+  "version": "0.1.0",
+  "description": "Repository of custom-provider-test",
+  "author": "Label A B.V. [labela.nl]",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "next dev -p $([ -f .port ] && cat .port || echo 3000)",
+    "dev": "npm run start",
+    "build": "next build",
+    "server": "next start",
+    "lint": "next lint",
+    "analyze": "BUNDLE_ANALYZE=both npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "npx concurrently \"npm run lint\" \"npm run typecheck\""
+  },
+  "dependencies": {
+    "@tanstack/react-table": "8.1.3",
+    "body-scroll-lock": "3.1.5",
+    "dayjs": "1.11.2",
+    "lodash": "4.17.21",
+    "next": "12.2.0",
+    "next-auth": "4.7.0",
+    "react": "17.0.2",
+    "react-day-picker": "7.4.10",
+    "react-dom": "17.0.2",
+    "react-hook-form": "7.31.2",
+    "react-query": "3.39.0",
+    "react-select": "5.3.2",
+    "react-toastify": "9.0.1",
+    "styled-components": "5.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-syntax-flow": "^7.17.12",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@next/bundle-analyzer": "^12.1.6",
+    "@next/eslint-plugin-next": "^12.2.0",
+    "@svgr/webpack": "6.2.1",
+    "@types/body-scroll-lock": "3.1.0",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "17.0.42",
+    "@types/react-dom": "17.0.14",
+    "@types/react-select": "5.0.1",
+    "@types/react-table": "7.7.12",
+    "@types/styled-components": "5.1.25",
+    "@types/webpack": "5.28.0",
+    "@typescript-eslint/eslint-plugin": "5.30.0",
+    "@typescript-eslint/parser": "5.30.0",
+    "eslint": "8.18.0",
+    "eslint-config-next": "^12.2.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-flowtype": "8.0.3",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "next-pwa": "^5.5.2",
+    "ts-toolbelt": "^9.6.0",
+    "typescript": "4.7.4",
+    "webpack": "^5.72.1"
+  },
+  "keywords": [],
+  "labela": {
+    "boilerplate": {
+      "name": "react-web-dashboard",
+      "version": "1.3.1"
+    }
+  }
+}

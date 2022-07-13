@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@next/next/recommended",
+    ".eslint.base.json"
+  ],
+  "globals": {
+    "__DEV__": false,
+    "__TEST__": false,
+    "__ACC__": false,
+    "__PROD__": false
+  },
+  "root": true
+}
